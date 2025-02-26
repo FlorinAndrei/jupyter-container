@@ -25,7 +25,6 @@ networkx
 notebook
 numpy
 optuna
-ortools
 packaging
 pandas
 parso
@@ -48,6 +47,9 @@ scikit-learn
 scipy
 six
 stack-data
+torch
+torchvision
+torchaudio
 tornado
 tqdm
 traitlets

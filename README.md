@@ -11,8 +11,6 @@ Convenient, but super-insecure. Anybody could connect to your Jupyter server. Do
 
 `requirements.txt` has a variety of extra packages typically used in Data Science and Machine Learning. It generates bigger images. This is the default.
 
-PyTorch is also installed, as a separate step in the Dockerfile. It is not part of `requirements.txt`. Disable it in the Dockerfile if you don't need it.
-
 To build the image, simply run `sh build.sh`.
 
 To run the container, run `sh run-jupyter-container.sh`. The container launched this way will be started again after you reboot the machine (you do not need to put it in the startup sequence).
