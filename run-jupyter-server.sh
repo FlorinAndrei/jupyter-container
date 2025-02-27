@@ -3,10 +3,14 @@ set -x
 docker stop jupyter-server || true
 docker rm jupyter-server || true
 
+# Create the volume if it doesn't exist
+docker volume create jupyter-cache || true
+
 docker run -d \
 	--gpus all \
 	--network=host \
-  --restart always \
+	--restart always \
+	-v jupyter-cache:/root/.cache \
 	--name jupyter-server \
 	florinandrei/jupyter-server:latest
 
