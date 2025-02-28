@@ -20,4 +20,4 @@ RUN --mount=type=cache,target=/root/.cache/pip pip3.13 install --user --root-use
 COPY hf.txt .
 RUN --mount=type=cache,target=/root/.cache/pip pip3.13 install --user --root-user-action ignore -r hf.txt
 
-CMD ["jupyter", "notebook", "--no-browser", "--allow-root", "--port=8080", "--ip=0.0.0.0", "--IdentityProvider.token=''", "--ServerApp.password=''", "--ServerApp.disable_check_xsrf=True"]
+CMD ["jupyter", "notebook", "--no-browser", "--allow-root", "--port=8888", "--ip=0.0.0.0", "--IdentityProvider.token=''", "--ServerApp.password=''", "--ServerApp.disable_check_xsrf=True"]
