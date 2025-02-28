@@ -33,6 +33,7 @@ pillow
 pingouin
 platformdirs
 plotly
+praw
 prompt_toolkit
 psutil
 ptyprocess
