@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 set -x
 
 docker stop jupyter-server || true
